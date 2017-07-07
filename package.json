@@ -1,0 +1,25 @@
+{
+  "name": "vue-object-model",
+  "version": "0.0.0",
+  "description": "A plugin for ObjectModel integration in Vue components",
+  "jsnext": "dist/bundle.js",
+  "main": "dist/bundle.common.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint src/* test/* --fix"
+  },
+  "files": [
+    "src/"
+  ],
+  "author": "Sylvain Pollet-Villard",
+  "license": "MIT",
+  "dependencies": {
+    "objectmodel": "^3.0.0",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "eslint": "^3.7.1"
+  }
+}
