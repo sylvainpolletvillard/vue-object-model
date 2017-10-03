@@ -7,7 +7,7 @@
 </template>
 
 <script>
-	import { Model } from 'objectmodel'
+	import { Model } from '../../../src/main.js'
 
 	const Integer = Model(Number).assert(Number.isInteger)
 
@@ -15,7 +15,7 @@
 		name: 'app',
 		model: {
 			name: String,
-			counter: Number
+			counter: Integer
 		},
         data(){
 			return {
@@ -38,19 +38,5 @@
 
 h1, h2 {
   font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
 }
 </style>
