@@ -5,8 +5,9 @@ const VueObjectModel = {
 
 		Vue.mixin({
 			beforeCreate(){
-				if(this.$options.model){
-					const VueModel = new Model(this.$options.model);
+				let modelDefinition = this.$options.model
+				if(modelDefinition){
+					const VueModel = new Model(modelDefinition);
 					let data = this.$options.data || {};
 					let newData;
 					if(typeof data === "function"){
@@ -23,5 +24,7 @@ const VueObjectModel = {
 		})
 	}
 };
+
+export { Model, VueObjectModel };
 
 export default VueObjectModel;
