@@ -15,8 +15,8 @@
   ],
   "author": "Sylvain Pollet-Villard",
   "license": "MIT",
-  "dependencies": {
-    "objectmodel": "^3.0.0",
+  "peerDependencies": {
+    "objectmodel": "latest",
     "vue": "latest"
   },
   "devDependencies": {
